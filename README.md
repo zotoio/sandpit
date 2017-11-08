@@ -1,1 +1,4 @@
-# ![Alt text](/pic.png?raw=true "Screenshot"){:height="50%" width="50%"} sandpit
+<img src="https://raw.githubusercontent.com/wyvern8/akamai-nginx/raw/master/logo.png?raw=true" alt="" title="logo" style="
+    width: 150px;
+    align: right;
+    " align="right">
