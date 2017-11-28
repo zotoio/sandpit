@@ -6,6 +6,5 @@ s
 sk
 sd
 js
-d
-d
+sd
 d
