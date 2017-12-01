@@ -3,7 +3,7 @@
     {
       "type": "functional", 
       "options": {
-        "tags": ["@smoke"],
+        "tags": ["@site-google","@smoke"],
         "browsers": ["chrome"]
       }
     },
