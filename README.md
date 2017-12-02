@@ -3,7 +3,7 @@
 </a>a
 sdfsdfsd
 
-<image align="right" src="https://storage.googleapis.com/github-bin/gtm-logo.svg">            
+<image align="right" height="160" width="160" src="https://storage.googleapis.com/github-bin/gtm-logo.svg">            
 ls
 dsfsddfs
 ss
