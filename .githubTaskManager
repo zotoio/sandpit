@@ -1,0 +1,17 @@
+{
+  "tasks": [
+    {
+      "type": "functional", 
+      "options": {
+        "tags": ["@smoke"],
+        "browsers": ["chrome"]
+      }
+    },
+    {
+      "type": "a11y", 
+      "options": {
+        "tags": ["@a11y"]
+      }
+    }
+  ]
+}  

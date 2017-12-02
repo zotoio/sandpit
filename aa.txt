@@ -3,6 +3,3 @@ s
 s
 sf
 x
-d
-s
-ssss
