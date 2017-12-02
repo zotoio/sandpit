@@ -3,7 +3,9 @@
 </a>a
 sdfsdfsd
 
+<div align="right>
 [![npm version](https://storage.googleapis.com/github-bin/gtm-logo.svg)]()
+            </div>            
 ls
 dsfsddfs
 ss
