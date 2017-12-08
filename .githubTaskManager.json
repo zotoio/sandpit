@@ -8,6 +8,13 @@
       }
     },
     {
+      "type": "intentionally_missing",
+      "executor": "Jenkins",
+      "options": {
+        "note": "This job doesn't exist in Jenkins"
+      }
+    },
+    {
       "type": "functional",
       "executor": "Jenkins",
       "options": {
