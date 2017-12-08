@@ -24,7 +24,7 @@
     },
     {
       "type": "a11y",
-      "executor": "Teamcity",
+      "executor": "Jenkins",
       "options": {
         "tags": ["@a11y"]
       }
