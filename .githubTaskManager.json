@@ -4,7 +4,7 @@
       "type": "diagnostic",
       "executor": "Ping",
       "options": {
-        "count": 20
+        "count": 25
       }
     },
     {
