@@ -1,6 +1,13 @@
 {
   "tasks": [
     {
+      "type": "diagnostic",
+      "executor": "Ping",
+      "options": {
+        "count": 20
+      }
+    },
+    {
       "type": "functional",
       "executor": "Jenkins",
       "options": {
