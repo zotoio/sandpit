@@ -5,7 +5,7 @@
         "executor": "Ping",
         "context": "diagnostic",
         "options": {
-          "count": 20
+          "count": 27
         }
       },
       {
@@ -26,13 +26,6 @@
       {
         "executor": "Jenkins",
         "context": "a11y",        
-        "options": {
-          "tags": ["@a11y"]
-        }
-      },
-      {
-        "executor": "Travis",
-        "context": "integration",        
         "options": {
           "tags": ["@a11y"]
         }
