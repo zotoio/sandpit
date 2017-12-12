@@ -16,11 +16,10 @@
         }
       },
       {
-        "executor": "Jenkins",
-        "context": "functional",
+        "executor": "Docker",
+        "context": "localAgent",
         "options": {
-          "tags": ["@smoke"],
-          "browsers": ["chrome"]
+          "image": ["chrome"]
         }
       },
       {
