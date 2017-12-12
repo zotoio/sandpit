@@ -1,40 +1,21 @@
 {
-  "tasks": [
-    {
-      "type": "diagnostic",
-      "executor": "Ping",
-      "options": {
-        "count": 20
+  "pull_request": {
+    "tasks": [
+      {
+        "executor": "Ping",
+        "context": "diagnostic",
+        "options": {
+          "count": 422
+        }
+      },
+      {
+        "executor": "Docker",
+        "context": "localAgent",
+        "options": {
+          "image": "alpine",
+          "command": ["/bin/ls", "-ltr", "/bin"]
+        }
       }
-    },
-    {
-      "type": "intentionally_missing",
-      "executor": "Jenkins",
-      "options": {
-        "note": "This job doesn't exist in Jenkins"
-      }
-    },
-    {
-      "type": "functional",
-      "executor": "Jenkins",
-      "options": {
-        "tags": ["@smoke"],
-        "browsers": ["chrome"]
-      }
-    },
-    {
-      "type": "a11y",
-      "executor": "Jenkins",
-      "options": {
-        "tags": ["@a11y"]
-      }
-    },
-    {
-      "type": "integration",
-      "executor": "Travis",
-      "options": {
-        "tags": ["@a11y"]
-      }
-    }
-  ]
+    ]
+  }  
 }
