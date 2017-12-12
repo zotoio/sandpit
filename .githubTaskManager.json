@@ -9,25 +9,11 @@
         }
       },
       {
-        "executor": "Jenkins",
-        "context": "intentionally_missing",
-        "options": {
-          "note": "This job doesn't exist in Jenkins"
-        }
-      },
-      {
         "executor": "Docker",
         "context": "localAgent",
         "options": {
           "image": ["alpine"],
           "command": ["/bin/sh", "-c", "uname", "-a"]
-        }
-      },
-      {
-        "executor": "Jenkins",
-        "context": "a11y",        
-        "options": {
-          "tags": ["@a11y"]
         }
       }
     ]
