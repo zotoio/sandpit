@@ -19,7 +19,7 @@
         "executor": "Docker",
         "context": "localAgent",
         "options": {
-          "image": ["chrome"]
+          "image": ["alpine"]
         }
       },
       {
