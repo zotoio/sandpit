@@ -12,7 +12,7 @@
         "executor": "Docker",
         "context": "localAgent",
         "options": {
-          "image": ["alpine"],
+          "image": "alpine",
           "command": ["/bin/sh", "-c", "uname", "-a"]
         }
       }
