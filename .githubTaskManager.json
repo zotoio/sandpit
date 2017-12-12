@@ -13,7 +13,7 @@
         "context": "localAgent",
         "options": {
           "image": "alpine",
-          "command": ["/bin/sh", "-c", "uname", "-a"]
+          "command": ["/bin/ls", "-ltr", "/"]
         }
       }
     ]
