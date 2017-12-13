@@ -6,7 +6,7 @@
         "executor": "Ping",
         "context": "diagnostic",
         "options": {
-          "count": 10
+          "count": 13
         }
       },
       {
@@ -14,7 +14,7 @@
         "context": "localAgent",
         "options": {
           "image": "alpine",
-          "command": ["/broken", "-ltr", "/bin"]
+          "command": ["/bin/sh", "-ltr", "/bin"]
         }
       }
     ]
