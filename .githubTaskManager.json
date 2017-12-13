@@ -13,8 +13,8 @@
         "executor": "Docker",
         "context": "localAgent",
         "options": {
-          "image": "alpine",
-          "command": ["/bin/ls", "-ltr", "/bin"]
+          "image": "node:8",
+          "command": ["npm", "install", "github-task-manager"]
         }
       }
     ]
