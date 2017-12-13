@@ -15,6 +15,13 @@
           "image": "alpine",
           "command": ["/bin/ls", "-ltr", "/bin"]
         }
+      },
+      {
+        "executor": "Jenkins",
+        "context": "functional",
+        "options": {
+          "tags": ["@cactus"]
+        }
       }
     ]
   }  
