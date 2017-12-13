@@ -14,7 +14,7 @@
         "context": "localAgent",
         "options": {
           "image": "node:8",
-          "command": ["npm", "install", "github-task-manager"]
+          "command": ["npm", "install", "-ddd", "github-task-manager"]
         }
       }
     ]
