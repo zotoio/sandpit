@@ -22,7 +22,7 @@
         "context": "avtest",
         "options": {
           "har": {
-            "url": "http://echo.jsontest.com/insert-key-here/insert-value-here/key/value",
+            "url": "https://httpbin.org/headers",
             "method": "GET",
             "headers": [
               {
@@ -30,6 +30,11 @@
                 "value": "application/json"
               }  
             ]  
+          },
+          "validator": {
+            "type": "bodyJson",
+            "objectCheckRef": "headers.host",
+            "objectCheckVal": "httpbin.org"
           }  
         }
       }
