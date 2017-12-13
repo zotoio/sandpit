@@ -9,14 +9,6 @@
         }
       },
       {
-        "executor": "Docker",
-        "context": "localAgent",
-        "options": {
-          "image": "alpine",
-          "command": ["/bin/ls", "-ltr", "/bin"]
-        }
-      },
-      {
         "executor": "Jenkins",
         "context": "functional",
         "options": {
