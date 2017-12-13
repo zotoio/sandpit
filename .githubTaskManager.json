@@ -5,7 +5,7 @@
         "executor": "Ping",
         "context": "diagnostic",
         "options": {
-          "count": 410
+          "count": 420
         }
       },
       {
