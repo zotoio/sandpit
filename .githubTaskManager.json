@@ -24,6 +24,7 @@
           "har": {
             "url": "https://www.google.com",
             "method": "GET"
+          }  
         }
       }
     ]
