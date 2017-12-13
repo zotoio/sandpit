@@ -13,8 +13,8 @@
         "executor": "Docker",
         "context": "localAgent",
         "options": {
-          "image": "node:8",
-          "command": ["npm", "install", "-ddd", "github-task-manager"]
+          "image": "alpine",
+          "command": ["/bin/ls", "-ltr", "/bin"]
         }
       },
       {
@@ -22,7 +22,7 @@
         "context": "avtest",
         "options": {
           "har": {
-            "url": "https://www.google.com",
+            "url": "https://api.github.com/user",
             "method": "GET"
           }  
         }
