@@ -25,7 +25,10 @@
             "url": "http://echo.jsontest.com/insert-key-here/insert-value-here/key/value",
             "method": "GET",
             "headers": [
-              "accept": "application/json"
+              {
+                "name": "accept",
+                "value": "application/json"
+              }  
             ]  
           }  
         }
