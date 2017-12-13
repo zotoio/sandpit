@@ -33,7 +33,7 @@
           },
           "validator": {
             "type": "bodyJson",
-            "objectCheckRef": "headers.host",
+            "objectCheckRef": "headers.Host",
             "objectCheckVal": "httpbin.org"
           }  
         }
