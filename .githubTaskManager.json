@@ -12,7 +12,7 @@
         "executor": "Jenkins",
         "context": "functional",
         "options": {
-          "tags": ["@cactus"]
+          "tags": ["@cactus", "@##GHPRNUM##"]
         }
       },
       {
