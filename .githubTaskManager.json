@@ -22,7 +22,7 @@
         "context": "avtest",
         "options": {
           "har": {
-            "url": "https://api.github.com/user",
+            "url": "https://httpbin.org/get",
             "method": "GET"
           }  
         }
