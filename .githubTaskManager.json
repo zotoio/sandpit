@@ -14,6 +14,13 @@
         "options": {
           "tags": ["@cactus"]
         }
+      },
+      {
+        "executor": "Jenkins",
+        "context": "a11y",
+        "options": {
+          "tags": ["@cactus", "@a11y"]
+        }
       }
     ]
   }  
