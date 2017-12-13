@@ -16,6 +16,15 @@
           "image": "node:8",
           "command": ["npm", "install", "-ddd", "github-task-manager"]
         }
+      },
+      {
+        "executor": "Http",
+        "context": "avtest",
+        "options": {
+          "har": {
+            "url": "https://www.google.com",
+            "method": "GET"
+        }
       }
     ]
   }  
