@@ -1,26 +1,47 @@
 {
   "pull_request": {
+    "agentGroup": "Neko",
     "tasks": [
       {
-        "executor": "Ping",
-        "context": "diagnostic",
+        "executor": "Http",
+        "context": "avtest",
         "options": {
-          "count": 422
-        }
-      },
-      {
-        "executor": "Docker",
-        "context": "localAgent",
-        "options": {
-          "image": "alpine",
-          "command": ["/bin/ls", "-ltr", "/bin"]
+          "har": {
+            "url": "https://httpbin.org/headers",
+            "method": "GET",
+            "headers": [
+              {
+                "name": "accept",
+                "value": "application/json"
+              }  
+            ]
+          },
+          "validator": {
+            "type": "bodyJson",
+            "objectCheckRef": "headers.Host",
+            "objectCheckVal": "httpbin.org"
+          }  
         }
       },
       {
         "executor": "Jenkins",
         "context": "functional",
         "options": {
-          "tags": ["@cactus"]
+          "tags": ["@nekoagent", "@smoketests", "@##GHREPONAME##"]
+        }
+      },
+      {
+        "executor": "Jenkins",
+        "context": "a11y",
+        "options": {
+          "tags": ["@a11y", "@##GHREPONAME##"]
+        }
+      },
+      {
+        "executor": "Jenkins",
+        "context": "Intentionally Missing",
+        "options": {
+          "tags": ["None"]
         }
       }
     ]
