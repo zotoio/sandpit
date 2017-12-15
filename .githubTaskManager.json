@@ -1,6 +1,5 @@
 {
   "pull_request": {
-    "agentGroup": "Neko",
     "tasks": [
       {
         "executor": "Ping",
