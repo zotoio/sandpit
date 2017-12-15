@@ -14,7 +14,7 @@
                 "name": "accept",
                 "value": "application/json"
               }  
-            ]  
+            ]
           },
           "validator": {
             "type": "bodyJson",
@@ -27,7 +27,7 @@
         "executor": "Jenkins",
         "context": "functional",
         "options": {
-          "tags": ["@nekoagent", "@smokes", "@##GHREPONAME##"]
+          "tags": ["@nekoagent", "@smoketests", "@##GHREPONAME##"]
         }
       },
       {
