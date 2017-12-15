@@ -1,20 +1,12 @@
 {
   "pull_request": {
-    "agentGroup": "AV3",
+    "agentGroup": "NekoAgent",
     "tasks": [
       {
         "executor": "Ping",
         "context": "diagnostic",
         "options": {
           "count": 4
-        }
-      },
-      {
-        "executor": "Docker",
-        "context": "localAgent",
-        "options": {
-          "image": "alpine",
-          "command": ["/bin/ls", "-ltr", "/bin"]
         }
       },
       {
@@ -36,6 +28,13 @@
             "objectCheckRef": "headers.Host",
             "objectCheckVal": "httpbin.org"
           }  
+        }
+      },
+      {
+        "executor": "Jenkins",
+        "context": "functional"
+        "options": {
+          "tags": ["@nekoagent", "@smokes"]
         }
       }
     ]
