@@ -27,7 +27,7 @@
         "executor": "Jenkins",
         "context": "functional",
         "options": {
-          "tags": ["@nekoagent", "@smoketests", "@##GHREPONAME##"]
+          "tags": ["@nekoagent", "@smoketest", "@##GHREPONAME##"]
         }
       },
       {
