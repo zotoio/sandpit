@@ -3,13 +3,6 @@
     "agentGroup": "Neko",
     "tasks": [
       {
-        "executor": "Ping",
-        "context": "diagnostic",
-        "options": {
-          "count": 5
-        }
-      },
-      {
         "executor": "Http",
         "context": "avtest",
         "options": {
@@ -34,7 +27,14 @@
         "executor": "Jenkins",
         "context": "functional",
         "options": {
-          "tags": ["@nekoagent", "@smokes", "@##GHREPONAME##", "@more"]
+          "tags": ["@nekoagent", "@smokes", "@##GHREPONAME##"]
+        }
+      },
+      {
+        "executor": "Jenkins",
+        "context": "a11y",
+        "options": {
+          "tags": ["@a11y", "@##GHREPONAME##"]
         }
       }
     ]
