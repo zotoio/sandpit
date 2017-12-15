@@ -32,7 +32,7 @@
       },
       {
         "executor": "Jenkins",
-        "context": "functional"
+        "context": "functional",
         "options": {
           "tags": ["@nekoagent", "@smokes"]
         }
