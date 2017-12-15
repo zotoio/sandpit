@@ -34,7 +34,7 @@
         "executor": "Jenkins",
         "context": "functional",
         "options": {
-          "tags": ["@nekoagent", "@smokes", "@##GHREPONAME##"]
+          "tags": ["@nekoagent", "@smokes", "@##GHREPONAME##", "@more"]
         }
       }
     ]
