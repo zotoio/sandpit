@@ -41,7 +41,7 @@
         "executor": "Jenkins",
         "context": "Intentionally Missing",
         "options": {
-          "tags": ["None"]
+          "tags": ["None", "Nada"]
         }
       }
     ]
