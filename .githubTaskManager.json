@@ -1,6 +1,6 @@
 {
   "pull_request": {
-    "agentGroup": "Neko",
+    "agentGroup": "K8S",
     "tasks": [
       {
         "executor": "Http",
