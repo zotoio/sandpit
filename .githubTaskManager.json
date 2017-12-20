@@ -3,6 +3,13 @@
     "agentGroup": "Neko",
     "tasks": [
       {
+        "executor": "Ping",
+        "context": "diagnostic",
+        "options": {
+          "count": 3
+        }
+      },
+      {
         "executor": "Http",
         "context": "avtest",
         "options": {
