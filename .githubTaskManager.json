@@ -1,6 +1,6 @@
 {
   "pull_request": {
-    "agentGroup": "Neko",
+    "agentGroup": "AV",
     "tasks": [
       {
         "executor": "Http",
