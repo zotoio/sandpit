@@ -14,7 +14,7 @@
         "executor": "Ping",
         "context": "diagnostic",
         "options": {
-          "count": 1
+          "count": 2
         }
       },
       {
