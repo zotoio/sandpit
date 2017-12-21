@@ -3,6 +3,14 @@
     "agentGroup": "AV",
     "tasks": [
       {
+         "executor": "Docker",
+         "context": "run",
+         "options": {
+           "image": "node:8",
+           "command": ["/bin/ls", "-ltr", "/bin"]
+         }
+       },
+      {
         "executor": "Ping",
         "context": "diagnostic",
         "options": {
