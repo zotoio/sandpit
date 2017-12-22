@@ -7,7 +7,7 @@
          "context": "run",
          "options": {
            "image": "node:8",
-           "command": ["/bin/ls", "-ltra", "/bin"]
+           "command": ["/bin/ls", "-lta", "/bin"]
          }
        }
     ]
