@@ -1,6 +1,6 @@
 {
   "pull_request": {
-    "agentGroup": "K8S",
+    "agentGroup": "AV",
     "tasks": [
       {
          "executor": "Docker",
