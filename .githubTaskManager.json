@@ -6,7 +6,7 @@
          "executor": "Docker",
          "context": "run",
          "options": {
-           "image": "node:8",
+           "image": "alpine",
            "command": ["/bin/ls", "-ltra", "/bin"]
          }
        }
