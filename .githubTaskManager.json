@@ -9,7 +9,7 @@
            "image": "alpine:latest",
            "command": ["/bin/ls", "-ltra", "/bin"],
            "env": [
-             "test=var23"
+             "test=var234"
            ]
          }
        }
