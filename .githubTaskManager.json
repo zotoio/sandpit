@@ -8,6 +8,9 @@
          "options": {
            "image": "alpine:latest",
            "command": ["/bin/ls", "-ltra", "/bin"]
+           "env": [
+             {"test": "var"}
+           ]
          }
        }
     ]
