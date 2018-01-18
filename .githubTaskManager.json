@@ -7,7 +7,7 @@
          "context": "run ls in latest alpine",
          "options": {
            "image": "alpine:latest",
-           "command": ["/bin/ls", "-ltra", "/bin"]
+           "command": ["/bin/ls", "-ltr", "/bin"]
          }
        }
     ]
