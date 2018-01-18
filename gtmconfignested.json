@@ -1,0 +1,54 @@
+{
+    "pull_request": {
+        "tasks": [
+            {
+                "executor": "Jenkins",
+                "context": "functional",
+                "options": {
+                    "tags": [
+                        "@functional",
+                        "@smoketests",
+                        "@##GHREPONAME##"
+                    ]
+                },
+                "tasks": [
+                    {
+                        "executor": "Jenkins",
+                        "context": "functional",
+                        "options": {
+                            "tags": [
+                                "@nested",
+                                "@maybeadeploy",
+                                "@##GHREPONAME##"
+                            ]
+                        },
+                        "tasks": [
+                            {
+                                "executor": "Jenkins",
+                                "context": "functional",
+                                "options": {
+                                    "tags": [
+                                        "@nestedagain",
+                                        "@maybeadeploy",
+                                        "@##GHREPONAME##"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "executor": "Jenkins",
+                "context": "a11y",
+                "options": {
+                    "tags": [
+                        "@a11y",
+                        "@##GHREPONAME##",
+                        "@Tenon"
+                    ]
+                }
+            }
+        ]
+    }
+}
