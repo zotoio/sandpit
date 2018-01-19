@@ -7,7 +7,7 @@
                 "options": {
                     "tags": [
                         "@functional",
-                        "@smoketests",
+                        "@firsttask",
                         "@##GHREPONAME##"
                     ]
                 },
