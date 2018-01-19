@@ -1,15 +1,54 @@
 {
-  "pull_request": {
-    "agentGroup": "AV",
-    "tasks": [
-      {
-         "executor": "Docker",
-         "context": "run ls in latest alpine",
-         "options": {
-           "image": "alpine:latest",
-           "command": ["/bin/ls", "-ltra", "/bin"]
-         }
-       }
-    ]
-  }  
+    "pull_request": {
+        "tasks": [
+            {
+                "executor": "Jenkins",
+                "context": "functional",
+                "options": {
+                    "tags": [
+                        "@minty",
+                        "@mines",
+                        "@##GHREPONAME##"
+                    ]
+                },
+                "tasks": [
+                    {
+                        "executor": "Jenkins",
+                        "context": "a11y",
+                        "options": {
+                            "tags": [
+                                "@nested",
+                                "@maybeadeploy",
+                                "@##GHREPONAME##"
+                            ]
+                        },
+                        "tasks": [
+                            {
+                                "executor": "Jenkins",
+                                "context": "intentionally_missing",
+                                "options": {
+                                    "tags": [
+                                        "@nestedagain",
+                                        "@maybeadeploy",
+                                        "@##GHREPONAME##"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "executor": "Jenkins",
+                "context": "a11y",
+                "options": {
+                    "tags": [
+                        "@a11y-update",
+                        "@##GHREPONAME##",
+                        "@Tenon2"
+                    ]
+                }
+            }
+        ]
+    }
 }
