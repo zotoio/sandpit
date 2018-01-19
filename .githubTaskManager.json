@@ -43,7 +43,7 @@
                 "context": "a11y",
                 "options": {
                     "tags": [
-                        "@a11y",
+                        "@a11y-update",
                         "@##GHREPONAME##",
                         "@Tenon"
                     ]
