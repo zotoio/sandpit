@@ -6,7 +6,7 @@
                 "context": "functional",
                 "options": {
                     "tags": [
-                        "@testing",
+                        "@tasking",
                         "@firsttask",
                         "@##GHREPONAME##"
                     ]
