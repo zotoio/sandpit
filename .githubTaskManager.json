@@ -6,7 +6,7 @@
                 "context": "functional",
                 "options": {
                     "tags": [
-                        "@tasking",
+                        "@multitasking",
                         "@mines",
                         "@##GHREPONAME##"
                     ]
@@ -14,7 +14,7 @@
                 "tasks": [
                     {
                         "executor": "Jenkins",
-                        "context": "functional",
+                        "context": "a11y",
                         "options": {
                             "tags": [
                                 "@nested",
@@ -25,7 +25,7 @@
                         "tasks": [
                             {
                                 "executor": "Jenkins",
-                                "context": "functional",
+                                "context": "intentionally_missing",
                                 "options": {
                                     "tags": [
                                         "@nestedagain",
