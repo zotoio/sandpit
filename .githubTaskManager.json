@@ -4,17 +4,24 @@
         "agentGroup": "av",
         "tasks": [
                {
-                     "executor": "Docker",
-                     "context": "run ls in latest alpine1a",
-                     "options": {
-                       "image": "alpine:latest",
-                       "command": ["/bin/ls", "-ltra", "/bin"]
-                     }
-                },
+                 "executor": "Docker",
+                 "context": "run ls in latest alpine1a",
+                 "options": {
+                   "image": "alpine:latest",
+                   "command": ["/bin/ls", "-ltra", "/bin"]
+                 }
+                ,
                 "tasks": [
+                     {
+                        "executor": "Docker",
+                         "context": "run ls in latest alpine2b",
+                         "options": {
+                           "image": "alpine:latest",
+                           "command": ["/bin/ls", "-ltra", "/bin"]
+                         },
                     {
                         "executor": "Docker",
-                         "context": "run ls in latest alpine2",
+                         "context": "run ls in latest alpine2b",
                          "options": {
                            "image": "alpine:latest",
                            "command": ["/bin/ls", "-ltra", "/bin"]
