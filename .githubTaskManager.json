@@ -3,53 +3,42 @@
         "av":"12588",
         "agentGroup": "av",
         "tasks": [
-            {
-                "executor": "Jenkins",
-                "context": "functional",
-                "options": {
-                    "tags": [
-                        "@moat",
-                        "@hashyhashy",
-                        "@##GHREPONAME##"
-                    ]
+               {
+                     "executor": "Docker",
+                     "context": "run ls in latest alpine1a",
+                     "options": {
+                       "image": "alpine:latest",
+                       "command": ["/bin/ls", "-ltra", "/bin"]
+                     }
                 },
                 "tasks": [
                     {
-                        "executor": "Jenkins",
-                        "context": "a11y",
-                        "options": {
-                            "tags": [
-                                "@nested",
-                                "@maybeadeploy",
-                                "@##GHREPONAME##"
-                            ]
-                        },
+                        "executor": "Docker",
+                         "context": "run ls in latest alpine2",
+                         "options": {
+                           "image": "alpine:latest",
+                           "command": ["/bin/ls", "-ltra", "/bin"]
+                         },
                         "tasks": [
                             {
-                                "executor": "Jenkins",
-                                "context": "intentionally_missing",
-                                "options": {
-                                    "tags": [
-                                        "@nestedagain",
-                                        "@maybeadeploy",
-                                        "@##GHREPONAME##"
-                                    ]
-                                }
+                                "executor": "Docker",
+                                 "context": "run ls in latest alpine3",
+                                 "options": {
+                                   "image": "alpine:latest",
+                                   "command": ["/bin/ls", "-ltra", "/bin"]
+                                 }
                             }
                         ]
                     }
                 ]
             },
             {
-                "executor": "Jenkins",
-                "context": "a11y",
-                "options": {
-                    "tags": [
-                        "@a11y-update",
-                        "@##GHREPONAME##",
-                        "@Tenon2"
-                    ]
-                }
+                "executor": "Docker",
+                 "context": "run ls in latest alpine1b",
+                 "options": {
+                   "image": "alpine:latest",
+                   "command": ["/bin/ls", "-ltra", "/bin"]
+                 }
             }
         ]
     }
