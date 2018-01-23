@@ -1,5 +1,6 @@
 {
     "pull_request": {
+        "agentGroup": "av",
         "tasks": [
             {
                 "executor": "Jenkins",
