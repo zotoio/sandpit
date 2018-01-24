@@ -5,59 +5,7 @@
     "tasks": [
       {
         "executor": "Docker",
-        "context": "run ls in latest alpine1a",
-        "options": {
-          "image": "alpine:latest",
-          "command": [
-            "/bin/ls",
-            "-ltra",
-            "/bin/ls"
-          ]
-        },
-        "tasks": [
-          {
-            "executor": "Docker",
-            "context": "run ls in latest alpine2a",
-            "options": {
-              "image": "alpine:latest",
-              "command": [
-                "/bin/ls",
-                "-ltra",
-                "/bin/ls"
-              ]
-            }
-          },
-          {
-            "executor": "Docker",
-            "context": "run ls in latest alpine2b",
-            "options": {
-              "image": "alpine:latest",
-              "command": [
-                "/bin/ls",
-                "-ltra",
-                "/bin/ls"
-              ]
-            },
-            "tasks": [
-              {
-                "executor": "Docker",
-                "context": "run ls in latest alpine3",
-                "options": {
-                  "image": "alpine:latest",
-                  "command": [
-                    "/bin/ls",
-                    "-ltra",
-                    "/bin/ls"
-                  ]
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "executor": "Docker",
-        "context": "run ls in latest alpine1b",
+        "context": "run ls in latest alpine single",
         "options": {
           "image": "alpine:latest",
           "command": [
@@ -67,6 +15,6 @@
           ]
         }
       }
-    ]
+    ]  
   }
 }
