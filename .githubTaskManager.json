@@ -11,7 +11,7 @@
           "command": [
             "/bin/ls",
             "-ltra",
-            "/bin"
+            "/bin/ls"
           ]
         },
         "tasks": [
@@ -23,7 +23,7 @@
               "command": [
                 "/bin/ls",
                 "-ltra",
-                "/bin"
+                "/bin/ls"
               ]
             }
           },
@@ -35,7 +35,7 @@
               "command": [
                 "/bin/ls",
                 "-ltra",
-                "/bin"
+                "/bin/ls"
               ]
             },
             "tasks": [
@@ -47,7 +47,7 @@
                   "command": [
                     "/bin/ls",
                     "-ltra",
-                    "/bin"
+                    "/bin/ls"
                   ]
                 }
               }
@@ -63,7 +63,7 @@
           "command": [
             "/bin/ls",
             "-ltra",
-            "/bin"
+            "/bin/ls"
           ]
         }
       }
