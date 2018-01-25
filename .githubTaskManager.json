@@ -5,6 +5,7 @@
     "agentGroup": "av",
     "tasks": [
       {
+        "disabled": true,
         "executor": "Docker",
         "context": "run ls in latest alpine1a",
         "options": {
