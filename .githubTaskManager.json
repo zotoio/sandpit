@@ -31,7 +31,8 @@
                                     "tags": [
                                         "@nestedagain",
                                         "@maybeadeploy",
-                                        "@##GHREPONAME##"
+                                        "@##GHREPONAME##",
+                                        "@##PARENT.BUILDNUMBER##"
                                     ]
                                 }
                             }
