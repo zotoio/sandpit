@@ -6,7 +6,7 @@
                 "context": "functional",
                 "options": {
                     "tags": [
-                        "@moat2",
+                        "@lessmoats",
                         "@moat",
                         "@##GHREPONAME##"
                     ]
