@@ -19,7 +19,8 @@
                             "tags": [
                                 "@nested",
                                 "@maybeadeploy",
-                                "@##GHREPONAME##"
+                                "@##GHREPONAME##",
+                                "@##PARENT.BUILDNUMBER##"
                             ]
                         },
                         "tasks": [
