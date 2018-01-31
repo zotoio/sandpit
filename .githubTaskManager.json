@@ -30,7 +30,7 @@
                                 "options": {
                                     "tags": [
                                         "@nestedagain",
-                                        "@maybeadeploy",
+                                        "@mele",
                                         "@##GHREPONAME##",
                                         "@##PARENT.BUILDNUMBER##"
                                     ]
