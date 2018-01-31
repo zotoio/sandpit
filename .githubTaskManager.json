@@ -18,7 +18,7 @@
         },
         "tasks": [
           {
-            "disableComments": false,
+            "disableComments": true,
             "executor": "Docker",
             "context": "run ls in latest alpine2a",
             "options": {
