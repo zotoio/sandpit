@@ -33,7 +33,7 @@
             "executor": "Docker",
             "context": "run ls in latest alpine2b",
             "options": {
-              "image": "malpine:latest",
+              "image": "alpine:latest",
               "command": [
                 "/bin/ls",
                 "-ltra",
