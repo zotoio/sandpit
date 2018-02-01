@@ -10,7 +10,20 @@
             "TAGS": "['@meep', '@##GHREPONAME##']",
             "ENVIRONMENT": "meep-env"
           }
-        }
+        },
+        "tasks": [
+          {
+            "executor": "Jenkins",
+            "context": "Generic Job",
+            "options": {
+              "jobName": "EXECUTE_AUTOMATED_TESTS",
+              "parameters": {
+                "TAGS": "['@child-task', '@parent-##PARENTBUILDNUMBER##']",
+                "ENVIRONMENT": "child-env"
+              }
+            }
+          }
+        ]
       }
     ]
   }  
