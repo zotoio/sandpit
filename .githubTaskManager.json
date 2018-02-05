@@ -2,7 +2,7 @@
 {
   "pull_request": {
     "disableComments": false,
-    "av": "fdgasfdfsfadsfdd",
+    "av": "fdgasfdfsfaddsfdd",
     "agentGroup": "av",
     "tasks": [
       {        
@@ -26,7 +26,7 @@
               "environment": "dev",
               "flags": {
                 "avtest-one": true,
-                "avtest-two": true
+                "avtest-two": false
               }
             }
           },
