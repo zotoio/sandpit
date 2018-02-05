@@ -2,7 +2,7 @@
 {
   "pull_request": {
     "disableComments": false,
-    "av": "fdgdssfdffaddsfd",
+    "av": "fdgadssfdffaddsfd",
     "agentGroup": "av",
     "tasks": [
       {        
@@ -19,15 +19,15 @@
         "tasks": [
           {
             "disableComments": false,
-            "executor": "Docker",
-            "context": "run ls in latest alpine2a",
+            "executor": "LaunchDarkly",
+            "context": "toggle flags",
             "options": {
-              "image": "alpine:latest",
-              "command": [
-                "/bifn/ls",
-                "-ltra",
-                "/bin/ls"
-              ]
+              "project": "mlc",
+              "environment": "dev",
+              "flags": {
+                "avtest-one": true,
+                "avtest-two": false
+              }
             }
           },
           {
