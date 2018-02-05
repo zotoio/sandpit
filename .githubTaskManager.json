@@ -2,7 +2,7 @@
 {
   "pull_request": {
     "disableComments": false,
-    "av": "fdga99djkjj",
+    "av": "fdga99odjkjj",
     "agentGroup": "av",
     "tasks": [
       {        
@@ -35,7 +35,7 @@
             "executor": "Docker",
             "context": "run ls in latest alpine2b",
             "options": {
-              "image": "dalpine:latest",
+              "image": "alpine:latest",
               "command": [
                 "/bin/ls",
                 "-ltra",
