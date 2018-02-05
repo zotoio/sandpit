@@ -26,7 +26,7 @@
               "environment": "dev",
               "flags": {
                 "avtest-one": true,
-                "avtest-two": false
+                "avtest-two": true
               }
             }
           },
