@@ -3,13 +3,13 @@
   "pull_request": {
     "disableComments": false,
     "av": "fdga99odjkjj",
-    "agentGroup": "av",
+    "agentGroup": "K8S",
     "tasks": [
       {        
         "executor": "Docker",
         "context": "run ls in latest alpine1a",
         "options": {
-          "image": "alpine:latest",
+          "image": "malpine:latest",
           "command": [
             "/bin/ls",
             "-ltra",
@@ -63,7 +63,7 @@
         "executor": "Docker",
         "context": "run ls in latest alpine1b",
         "options": {
-          "image": "alpine:latest",
+          "image": "malpine:latest",
           "command": [
             "/bin/ls",
             "-ltra",
