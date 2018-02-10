@@ -39,7 +39,7 @@
           ],
           "validator": {
             "type": "outputRegex",
-            "regex": "/SUCCESS/g"
+            "regex": "/HOSTNAME/g"
           }
         },
         "tasks": [
