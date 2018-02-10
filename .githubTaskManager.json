@@ -1,7 +1,7 @@
 
 {
   "pull_request": {
-    "av": "fvjdmllsfd",
+    "av": "fvjdmsllsfd",
     "agentGroup": "av",
     "tasks": [
       {        
@@ -10,9 +10,7 @@
         "options": {
           "image": "alpine:latest",
           "command": [
-            "/bin/ls",
-            "-ltra",
-            "/bin/ls"
+            "env"
           ]
         },
         "tasks": [
