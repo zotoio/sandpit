@@ -4,6 +4,27 @@
     "av": "fvjdmsllfd",
     "agentGroup": "av",
     "tasks": [
+      {
+        "executor": "Http",
+        "context": "avtest",
+        "options": {
+          "har": {
+            "url": "https://httpbin.org/headers",
+            "method": "GET",
+            "headers": [
+              {
+                "name": "accept",
+                "value": "application/json"
+              }
+            ]
+          },
+          "validator": {
+            "type": "bodyJson",
+            "objectCheckRef": "headers.Host",
+            "objectCheckVal": "httpbin.org"
+          }
+        }
+      },
       {        
         "executor": "Docker",
         "context": "run ls in latest alpine1a",
