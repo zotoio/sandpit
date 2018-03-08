@@ -1,8 +1,8 @@
 
 {
   "pull_request": {
-    "av": "fjsskdmsd",
-    "agentGroup": "av",
+    "av": "fjsskdmd",
+    "agentGroup": "K8S",
     "tasks": [
       {
         "executor": "Http",
