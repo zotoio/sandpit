@@ -26,7 +26,7 @@
         }
       },
       {        
-        "executor": "DockerSonarPullRequest",
+        "executor": "DockerSonar",
         "context": "Sonar test",
         "options": {
           "BUILD_TYPE": "nodejs" 
