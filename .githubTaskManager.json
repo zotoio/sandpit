@@ -2,7 +2,7 @@
 {
   "pull_request": {
     "av": "fjsskdmsd",
-    "agentGroup": "av",
+    "agentGroup": "K8S",
     "tasks": [
       {
         "executor": "Http",
