@@ -4,4 +4,4 @@
 
 <image align="right" height="160" width="160" src="https://storage.googleapis.com/github-bin/gtm-logo.svg">            
 
-Flying Sourcerer. He looks uncomfortable..
+Flying Sourcerer. He looks uncomfortable...
