@@ -21,6 +21,7 @@
             "regex": ".*HOSTNAME.*"
           }
         }
+      }   
      ]   
   },  
   "pull_request": {
