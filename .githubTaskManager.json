@@ -1,5 +1,27 @@
 
 {
+  "push": {
+    "agentGroup": "av",
+    "tasks": [
+      {        
+        "executor": "Docker",
+        "context": "run ls in latest alpine1a",
+        "options": {
+          "image": "alpine:latest",
+          "command": [
+            "env"
+          ],
+          "env": [
+            "myvar=myval",
+            "var2=val2"
+          ],
+          "validator": {
+            "type": "outputRegex",
+            "regex": ".*HOSTNAME.*"
+          }
+        }
+     ]   
+  },  
   "pull_request": {
     "av": "fjsskdmsd",
     "agentGroup": "av",
