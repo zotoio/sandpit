@@ -1,6 +1,7 @@
 
 {
   "push": {
+    "avtest: "123",
     "agentGroup": "av",
     "tasks": [
       {        
